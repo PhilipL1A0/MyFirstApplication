@@ -1,4 +1,4 @@
-package com.jnu.student.myfirstapplication;
+package com.jnu.student.myfirstapplication.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.app.AlertDialog;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.jnu.student.myfirstapplication.R;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tv_top;
