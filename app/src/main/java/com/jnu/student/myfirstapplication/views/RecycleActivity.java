@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.jnu.student.myfirstapplication.R;
 import com.jnu.student.myfirstapplication.adapter.ShopItemAdapter;
 import com.jnu.student.myfirstapplication.bean.Book;
+import com.jnu.student.myfirstapplication.utils.FileUtils;
 
 import java.util.ArrayList;
 
@@ -24,8 +25,10 @@ public class RecycleActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     ActivityResultLauncher<Intent> addBookLauncher;
+    ActivityResultLauncher<Intent> editBookLauncher;
     private ArrayList<Book> books;
     private ShopItemAdapter shopItemAdapter;
+    private FileUtils fileUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
